@@ -84,7 +84,8 @@ article img {
     width: 100%;
 }
 
-.read-more {
+/*** Read More ***/
+.read-more, .read-less {
     color: #02ccba;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -98,6 +99,14 @@ article img {
     left: 7px;
     font-size: 80%;
     top: -1px;
+}
+
+.read-less::after {
+  content: '\25B2';
+  position: relative;
+  left: 7px;
+  font-size: 80%;
+  top: -1px;
 }
 
 
